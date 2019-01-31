@@ -46,7 +46,7 @@
   (find-if #'(lambda (tok) (string= tok token)) (user-tokens user)))
 
 (defvar *user-store-path* (merge-pathnames "users.store" *store-path*))
-
+;;加载用户
 (defmethod load-user ()
  (let ((path *user-store-path*))
    (when (probe-file path)

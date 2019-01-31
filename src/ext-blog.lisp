@@ -23,7 +23,7 @@
   (:default-initargs
    :access-log-destination *access-log-path*
    :message-log-destination *message-log-path*))
-
+;;启动博客
 (defun start (&key (port 8080))
   (when (probe-file *font-path*)
       (kl-verify:load-font *font-path*))

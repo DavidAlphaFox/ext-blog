@@ -27,7 +27,7 @@
     :theme (find-theme (alist-field alist :theme))))
 
 (defvar *blog-store-path* (merge-pathnames "blog.store" *store-path*))
-
+;;从存储中加载博客
 (defun load-blog ()
   "Load a blog from storage, it will load posts and comments either."
   (let ((path *blog-store-path*))

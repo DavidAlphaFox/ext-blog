@@ -13,7 +13,7 @@
 
 (defun make-host ()
   (concatenate 'string "http://" (hunchentoot:host)))
-
+;; 创建全路径的URL
 (defun make-full-root-url ()
   (concatenate 'string (make-host) (restas:genurl 'main)))
 
